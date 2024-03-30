@@ -24,6 +24,8 @@ app.use(
     })
 )
 
+// biar bisa baca static file
+app.use(express.static(`${__dirname}/public`));
 
 app.use(flash())
 app.use(morgan('dev'))
